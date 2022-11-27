@@ -179,22 +179,22 @@ a:hover {
 }
 
 .home {
-	background: #eecec7;
+	/* background: #eecec7; */
 	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fd0ea), color-stop(100%, #4BB7B9));
 	background:-webkit-linear-gradient(top, #4fd0ea 0%, #4BB7B9 100%);
 	background:linear-gradient(to bottom, #4fd0ea 0%, #4BB7B9 100%); */
-	/* background: url("/images/bg/dark.svg");
-	background-size:contain; */
+	background: url("images/bg/dark.svg");
+	background-size:contain;
 	background-repeat: no-repeat;
 }
 
 .panel1 {
-	background: #6AB981;
+	/* background: #ffffff; */
 	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4BB7B9), color-stop(100%, #6AB981));
 	background: -webkit-linear-gradient(top, #4BB7B9 0%, #6AB981 100%);
 	background: linear-gradient(to bottom, #4BB7B9 0%, #6AB981 100%); */
-	/* background: url("/images/bg/shallow.svg");
-	background-size: contain; */
+	background: url("images/bg/shallow.svg");
+	background-size: contain;
 	background-repeat: no-repeat;
 }
 
@@ -203,13 +203,13 @@ a:hover {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6AB981), color-stop(100%, #AAD292));
 	background: -webkit-linear-gradient(top, #6AB981 0%, #AAD292 100%);
 	background: linear-gradient(to bottom, #6AB981 0%, #AAD292 100%); */
-	background: url("/images/bg/medium.svg");
+	background: url("images/bg/medium.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .panel3 {
-	background: url("/images/bg/dark.svg");
+	background: url("images/bg/dark.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
