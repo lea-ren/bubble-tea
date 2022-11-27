@@ -87,7 +87,7 @@ body {
 	position:absolute;
 	top:33px;
 	left:10px;
-	z-index: 15;
+	z-index: -7;
 	text-align:center;
 }
 .device-slide1 {
@@ -384,10 +384,6 @@ a:hover {
 	margin-top: 40px;
 }
 
-#wrapper {
-	max-height: 100%;
-}
-
 .image-selected {
 	width: 20px;
 	height: 20px;
@@ -425,6 +421,56 @@ a:hover {
 	margin-top: 60px;
 }
 
+.bubble-tea {
+	height: 600px;
+}
+
+.bubble-tea-image0 {
+	height: 25%;
+	bottom: 30px;
+	left: 230px;
+	position: absolute;
+	z-index: 4;
+}
+
+.bubble-tea-image1 {
+	height: 25%;
+	bottom: 30px;
+	right: 230px;
+	position: absolute;
+	z-index: 5;
+}
+.bubble-tea-image2 {
+	height: 25%;
+	bottom: 60px;
+	left: 210px;
+	position: absolute;
+	z-index: 2;
+}
+
+.bubble-tea-image3 {
+	height: 25%;
+	bottom: 60px;
+	right: 210px;
+	position: absolute;
+	z-index: 3;
+}
+
+.bubble-tea-image4 {
+	height: 25%;
+	bottom: 90px;
+	left: 260px;
+	position: absolute;
+	z-index: 0;
+}
+
+
+#baseTeaImage {
+	margin-top: 50px;
+	height: 600px;
+	align-self: left;
+
+}
 
 
 
