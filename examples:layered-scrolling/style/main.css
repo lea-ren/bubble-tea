@@ -103,7 +103,6 @@ body {
 	left:0;
 	width:100%;
 	z-index: 0;
-	align-self: center;
 }
 .slide .animatable {
 	opacity:0;
@@ -174,7 +173,9 @@ a:hover {
 }
 .inner {
 	position: relative;
+	float:left;
 	height:100%;
+	z-index:15;
 
 }
 
@@ -183,7 +184,7 @@ a:hover {
 	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fd0ea), color-stop(100%, #4BB7B9));
 	background:-webkit-linear-gradient(top, #4fd0ea 0%, #4BB7B9 100%);
 	background:linear-gradient(to bottom, #4fd0ea 0%, #4BB7B9 100%); */
-	background: url("images/bg/dark.png");
+	background: url("/images/bg/dark.svg");
 	background-size:contain;
 	background-repeat: no-repeat;
 }
@@ -193,7 +194,7 @@ a:hover {
 	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4BB7B9), color-stop(100%, #6AB981));
 	background: -webkit-linear-gradient(top, #4BB7B9 0%, #6AB981 100%);
 	background: linear-gradient(to bottom, #4BB7B9 0%, #6AB981 100%); */
-	background: url("images/bg/shallow.png");
+	background: url("/images/bg/shallow.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -203,13 +204,13 @@ a:hover {
 	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #6AB981), color-stop(100%, #AAD292));
 	background: -webkit-linear-gradient(top, #6AB981 0%, #AAD292 100%);
 	background: linear-gradient(to bottom, #6AB981 0%, #AAD292 100%); */
-	background: url("images/bg/medium.png");
+	background: url("/images/bg/medium.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
 
 .panel3 {
-	background: url("images/bg/dark.png");
+	background: url("/images/bg/dark.svg");
 	background-size: contain;
 	background-repeat: no-repeat;
 }
@@ -346,9 +347,8 @@ a:hover {
 	margin: 10px;
 	padding-top: 50px;
 	align-content: center;
+	
 }
-
-
 
 .image-item-circle {
 	width: 100px;
@@ -357,6 +357,7 @@ a:hover {
 	border-radius: 50%;
 	z-index: 0;
 	position:absolute;
+	margin-top: 40px;
 	margin-left: 25px;
 	
 }
@@ -364,16 +365,17 @@ a:hover {
 .image-image {
 	width: 150px;
 	height: 150px;
-	margin-top: -40px;
 	z-index: 1;
 	position:absolute;
 }
+
 .image-image:hover {
 	cursor: pointer;
 }
+
 .image-caption {
 	text-align: center;
-	margin-top: 120px;
+	margin-top: 160px;
 }
 
 .base-container {
@@ -381,7 +383,6 @@ a:hover {
 	flex-wrap: wrap;
 	width: 600px;
 	left: -50px;
-	margin-top: 40px;
 }
 
 .image-selected {
@@ -423,6 +424,7 @@ a:hover {
 
 .bubble-tea {
 	height: 600px;
+
 }
 
 .bubble-tea-image0 {
@@ -474,6 +476,7 @@ a:hover {
 
 
 
+
 .social-corner {
 	position: absolute;
 	top:18px;
@@ -487,12 +490,14 @@ a:hover {
 @media (max-width:800px) {
 	h1 {
 		font-size:15vw;
+		margin-left: 15px;
 	}
 	h2 {
 		font-size:12vw;
+		margin-left: 15px;
 	}
 	.inner {
 		width:70%;
-
+		margin-left: 15px;
 	}
 }
