@@ -4,6 +4,7 @@ const topping1 = document.querySelector(".bubble-tea-image1");
 const topping2 = document.querySelector(".bubble-tea-image2");
 const topping3 = document.querySelector(".bubble-tea-image3");
 const topping4 = document.querySelector(".bubble-tea-image4");
+const iceImageElement = document.querySelector(".bubble-tea-image5");
 let toppingList = [];
 let currentTopping = -1;
 function baseTeaChange(baseTea) {
@@ -38,8 +39,20 @@ function toppingChange(topping) {
             topping4.src = toppingToPath(topping); 
             break; 
     }
+    console.log("topping changed")
 }
 
 function toppingToPath(topping) {
     return 'images/topping/' + topping + '.png'
+}
+
+function iceChange(ice) {
+    if (ice=='No ice') {
+        iceImageElement.src = '';
+    }
+    else {
+        iceImageElement.src = 'images/ice/' + ice + '-display.png';
+
+    }
+    console.log("ice change");
 }
