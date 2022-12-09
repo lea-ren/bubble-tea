@@ -75,28 +75,9 @@ body {
 	float: left;
 	width:450px;
 }
-.device-frame {
-	position: relative;
-	float:right;
-}
-.device {
-	width:266px;
-	position: relative;
-}
-.device-slide {
-	position:absolute;
-	top:33px;
-	left:10px;
-	z-index: -7;
-	text-align:center;
-}
-.device-slide1 {
-	width: 700px;
-	height:700px;
-	left: -350px;
 
-	font-size:3em;
-}
+
+/****** slide:fixed content on each page ********/
 .slide {
 	position: absolute;
 	top:65px;
@@ -128,10 +109,11 @@ body {
 	z-index: 10;
 }
 
+/****** text ********/
 h2 {
 	font-size: 64px;
 	font-weight:bolder;
-	color: #DAAC8C;
+	color: #745130;
 	margin-bottom:20px
 }
 p {
@@ -184,6 +166,8 @@ a:hover {
 	transform: rotate(-45deg);
 
 }
+
+/****** panel:layered images under slide ********/
 .inner {
 	position: relative;
 	float:left;
@@ -195,15 +179,17 @@ a:hover {
 .background {
 	height:100vh;
 }
+
+/*** followed selectors are reserved for potential future use ***/
+/*** TODO: add tea-making utensil as background image ***/
 .home {
 
 	/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4fd0ea), color-stop(100%, #4BB7B9));
 	background:-webkit-linear-gradient(top, #4fd0ea 0%, #4BB7B9 100%);
 	background:linear-gradient(to bottom, #4fd0ea 0%, #4BB7B9 100%); */
 	/* background: url("images/bg/dark.svg");
-	background-size:contain;
-
-	background-repeat: no-repeat; */
+	background-size:contain; */
+	background-repeat: no-repeat;
 }
 
 
@@ -213,8 +199,8 @@ a:hover {
 	background: -webkit-linear-gradient(top, #4BB7B9 0%, #6AB981 100%);
 	background: linear-gradient(to bottom, #4BB7B9 0%, #6AB981 100%); */
 	/* background: url("images/bg/shallow.svg");
-	background-size:contain;
-	background-repeat: no-repeat; */
+	background-size:contain; */
+	background-repeat: no-repeat;
 }
 
 .panel2 {
@@ -223,8 +209,8 @@ a:hover {
 	background: -webkit-linear-gradient(top, #6AB981 0%, #AAD292 100%);
 	background: linear-gradient(to bottom, #6AB981 0%, #AAD292 100%); */
 	/* background: url("images/bg/medium.svg");
-	background-size: contain;
-	background-repeat: no-repeat; */
+	background-size: contain; */
+	background-repeat: no-repeat;
 }
 
 .panel3 {
@@ -233,62 +219,10 @@ a:hover {
 	background-size: contain;
 	background-repeat: no-repeat; */
 	/* z-index:-50; */
+	background-repeat: no-repeat;
 }
 
-
-
-.code {
-	background:rgba(0,0,0,0.2);
-}
-
-
-.pagination {
-	position:fixed;
-	right:20px;
-	top: 50%;
-  transform: translateY(-50%);
-
-	font-size:1.4em;
-	z-index: 10;
-}
-.pagination a {
-	display:block;
-	height:20px;
-	margin-bottom:5px;
-	color:white;
-	position:relative;
-	padding:4px;
-}
-.pagination a.active:after {
-	box-shadow:inset 0 0 0 5px;
-}
-.pagination a .hover-text {
-	position:absolute;
-	right:15px;
-	top:7px;
-	opacity:0;
-	-webkit-transition: opacity 0.5s ease;
-	transition: opacity 0.5s ease;
-	padding-right: 15px;
-}
-.pagination a:hover .hover-text {
-	opacity: 1;
-}
-.pagination a:after {
-	-webkit-transition:box-shadow 0.5s ease;
-	transition:box-shadow 0.5s ease;
-	width:10px;
-	height:10px;
-	display: block;
-	border:1px solid;
-	border-radius:50%;
-	content:'';
-	position: absolute;
-	margin:auto;
-	top:0;
-	right:4px;
-	bottom:0;
-}
+/****** choosing base tea ********/
 
 .image-item {
 	width: 150px;
@@ -308,7 +242,10 @@ a:hover {
 	position:absolute;
 	margin-top: 40px;
 	margin-left: 25px;
-	
+}
+.image-item-circle:hover {
+	border: 2px;
+	border-color: #000000;
 }
 
 .image-image {
@@ -334,16 +271,16 @@ a:hover {
 	left: -50px;
 }
 
-.image-selected {
-	width: 20px;
-	height: 20px;
-}
+/****** topping ********/
 
 .topping-item {
 	width: 80px;
 	height: 80px;
 	margin: 10px;
 	align-content: center;
+}
+.topping-item:hover {
+	cursor:pointer;
 }
 .topping-circle {
 	width: 60px;
@@ -373,6 +310,32 @@ a:hover {
 	text-underline-offset: 5px;
 }
 
+/****** bubble tea cup ********/
+
+.device-frame {
+	position: relative;
+	float:right;
+}
+.device {
+	width:266px;
+	position: relative;
+}
+.device-slide {
+	position:absolute;
+	top:33px;
+	left:10px;
+	z-index: -7;
+	text-align:center;
+}
+.device-slide1 {
+	width: 700px;
+	height:700px;
+	left: -350px;
+
+	font-size:3em;
+}
+
+/*** position of the cup and topping ***/
 .bubble-tea {
 	height: 600px;
 
@@ -435,7 +398,7 @@ a:hover {
 }
 
 /* refer to W3School https://www.w3schools.com/css/css_tooltip.asp */
-/* Tooltip container */
+/******* Tooltip container *******/
 .tooltip {
 	position: relative;
 	/* border-bottom: 1px dotted black; If you want dots under the hoverable text */
@@ -470,7 +433,7 @@ a:hover {
 
 
 
-
+/****** layout change for mobile size ********/
 @media (max-width:630px) {
 	h1 {
 		font-size:15vw;

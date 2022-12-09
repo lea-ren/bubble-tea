@@ -1,3 +1,4 @@
+// Use scrollify to animate the scrolling
 $(function() {
   $.scrollify({
 		section:".panel",
@@ -20,6 +21,8 @@ $(function() {
 
     },
     afterRender() {
+
+      // make the panel responsive to window size change
       $(".panel").each(function() {
         $(this).css("height", parseInt($(window).height())*6 );
 

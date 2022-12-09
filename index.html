@@ -22,75 +22,87 @@
 			<div class="content">
 
 				<div class="content-text">
+					<!-- introduction to bubble tea -->
 					<div class="slide" data-slide="0">
 						<h2 class="animatable">Bubble Tea</h2>
 						<div class="animatable">
 							<p class="normal-text">This guide is your crash course to all things bubble tea. The main goal here is to make you more knowledgeable about bubble tea’s ingredients. This knowledge will also help you better appreciate your bubble tea down to its last boba!</p>
 						</div>	
 					</div>
+					<!-- choose base drink -->
 					<div class="slide" data-slide="1">
 						<h2 class="animatable">Base Drink</h2>
 						<div class="animatable">
+
+							<!-- Introductory texts of base drinks -->
 							<p class="normal-text">First choose a base for your drink. You can think of this as the foundation of your bubble tea—even if it's not tea.</p>
-							<p class="normal-text">Click to pick! &#128071</p>
+							<p class="normal-text">Click to pick! &#128071;</p>
+
+							<!-- choose from 6 base drinks -->
 							<div class="base-container">
-								<div class="image-item" id="milk tea" onclick="baseTeaChange('milk tea')">
+								<div class="image-item" onclick="baseTeaChange('milk-tea')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='milk tea' src="images/base/milk tea.png">
+									<img class="image-image" alt='milk tea' src="images/base/milk-tea.png">
 									<p class="image-caption">Milk tea</p>
-									
 								</div>
-								<div class="image-item" id="milk based drinks" onclick="baseTeaChange('milk based drinks')">
-									<div class="image-item-circle" id="milk based drinks"></div>
-									<img class="image-image" alt='milk based drinks' src="images/base/milk based drinks.png">
+								<div class="image-item"  onclick="baseTeaChange('milk-based-drinks')">
+									<div class="image-item-circle"></div>
+									<img class="image-image" alt='milk based drinks' src="images/base/milk-based-drinks.png">
 									<p class="image-caption">Milk based tea</p>
 								</div>
-								<div class="image-item" id="pure tea" onclick="baseTeaChange('pure tea')">
+								<div class="image-item" onclick="baseTeaChange('pure-tea')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='milk based drinks' src="images/base/pure tea.png">
+									<img class="image-image" alt='milk based drinks' src="images/base/pure-tea.png">
 									<p class="image-caption">Pure tea</p>
 								</div>
-								<div class="image-item" id="fresh juice" onclick="baseTeaChange('fresh juice')">
+								<div class="image-item" onclick="baseTeaChange('fresh-juice')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='fresh juice' src="images/base/fresh juice.png">
+									<img class="image-image" alt='fresh juice' src="images/base/fresh-juice.png">
 									<p class="image-caption">Fresh juice</p>
 								</div>
-								<div class="image-item" id="probiotics" onclick="baseTeaChange('probiotics')">
+								<div class="image-item" onclick="baseTeaChange('probiotics')">
 									<div class="image-item-circle"></div>
 									<img class="image-image" alt='probiotics' src="images/base/probiotics.png">
 									<p class="image-caption">Probiotics</p>
 								</div>
-								<div class="image-item" id="fruit juice tea" onclick="baseTeaChange('fruit juice tea')">
+								<div class="image-item" onclick="baseTeaChange('fruit-juice-tea')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='fruit juice tea' src="images/base/fruit juice tea.png">
+									<img class="image-image" alt='fruit juice tea' src="images/base/fruit-juice-tea.png">
 									<p class="image-caption">Fruit juice tea</p>
 								</div>
 							</div>	
 						</div>
 					</div>
 
+					<!-- choose topping -->
 					<div class="slide" data-slide="2">
 						<h2 class="animatable">Pick toppings</h2>
 						<div class="animatable">
+
+							<!-- Introductory texts of topping -->
 							<p class="normal-text">In Taiwan, people have a taste for soft and satisfyingly chewy textures—something they describe as “Q”. The classic example is boba pearls, which are made from tapioca starch. However, there are so many other toppings that fit the bill! Mostly using local ingredients, Taiwanese tea makers have explored and expanded topping options to provide an extra happy bounce to your drink.</p>
-							<p class="normal-text">Click the image to pick! &#128071</p>
+							<p class="normal-text">Click the image to pick! &#128071; </p>
 							<div class="base-container">
-								<div class="topping-item"  onclick="toppingChange('Agar pearl')">
-									<img class="topping-image" alt='Agar pearl' src="images/topping/Agar pearl.png">
+
+								<!-- display various topping -->
+								<div class="topping-item"  onclick="toppingChange('Agar-pearl')">
+									<img class="topping-image" alt='Agar pearl' src="images/topping/Agar-pearl.png">
+									
+									<!-- tooltip about what the topping is and how it is made -->
 									<div class="tooltip"> 
 										<p class="topping-caption">Agar pearl</p>
 										<span class="tooltiptext" id="agarpearl1">It is also called crystal boba or white pearl, and is usually set by boiling agar, a seaweed extract, then immersed in syrup with a subtle citrus flavor.  It is white, translucent and soft, chewy but not as gelatinous as boba.  </span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Aiyu jelly')">
-									<img class="topping-image" alt='Aiyu jelly' src="images/topping/Aiyu jelly.png">
+								<div class="topping-item"  onclick="toppingChange('Aiyu-jelly')">
+									<img class="topping-image" alt='Aiyu jelly' src="images/topping/Aiyu-jelly.png">
 									<div class="tooltip"> 
 										<p class="topping-caption">Aiyu jelly</p>
 										<span class="tooltiptext" id="aiyujelly1">Aiyu is produced from the seeds of the awkeotsang creeping fig, a plant native to Taiwan that are found in mountains over 1500 m.  By massaging the seeds in water, pectin is released and interacts with the minerals in the water to gelatinize into a jelly.  Aiyu jelly shaved ice is a popular desert during the summer months in Taiwan.</span>
 									</div>				
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Aloe jelly')">
-									<img class="topping-image" alt='Aloe jelly' src="images/topping/Aloe jelly.png">
+								<div class="topping-item"  onclick="toppingChange('Aloe-jelly')">
+									<img class="topping-image" alt='Aloe jelly' src="images/topping/Aloe-jelly.png">
 									<div class="tooltip">
 										<p class="topping-caption">Aloe jelly</p>
 										<span class="tooltiptext" id="aloejelly1">Aloe vera jelly is made from the gel or pulp extracted from aloe vera plants, which is then soaked and boiled in water with sugar.</span>
@@ -103,85 +115,85 @@
 										<span class="tooltiptext" id="boba1">Also known as tapioca balls, boba are made from dried cassava root, which is a woody shrub that is native to South America.  The leaves are turned into tapioca, a starch, then soaked in sugar syrup to make them sweet.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Coconut jelly')">
-									<img class="topping-image" alt='Coconut jelly' src="images/topping/Coconut jelly.png">
+								<div class="topping-item"  onclick="toppingChange('Coconut-jelly')">
+									<img class="topping-image" alt='Coconut jelly' src="images/topping/Coconut-jelly.png">
 									<div class="tooltip">
 										<p class="topping-caption">Coconut jelly</p>
 										<span class="tooltiptext" id="coconutjelly1">Produced by the fermentation of coconut water that undergoes microbial cellulose production by a bacteria to form a gel. It is translucent, chewy, and has mild flavors.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Coffee jelly')">
-									<img class="topping-image" alt='coffee jelly' src="images/topping/Coffee jelly.png">
+								<div class="topping-item"  onclick="toppingChange('Coffee-jelly')">
+									<img class="topping-image" alt='coffee jelly' src="images/topping/Coffee-jelly.png">
 									<div class="tooltip">
 										<p class="topping-caption">Coffee jelly</p>
 										<span class="tooltiptext" id="coffeejelly1"> A jelly dessert produced by mixing coffee, sugar and agar or gelatin.  It can be made using instant mix or produced from scratch.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Dried longan')">
-									<img class="topping-image" alt='Dried longan' src="images/topping/Dried longan.png">
+								<div class="topping-item"  onclick="toppingChange('Dried-longan')">
+									<img class="topping-image" alt='Dried longan' src="images/topping/Dried-longan.png">
 									<div class="tooltip">
 										<p class="topping-caption">Dried longan</p>
 										<span class="tooltiptext" id="driedlongan1">Dried longan [桂圓] is tranditionally made by sun-drying fresh longan, a fruit whose Chinese characters mean 'dragon eye' [龍眼].  The logan plant is found in tropical regions of Asia.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Egg pudding')">
-									<img class="topping-image" alt='Egg pudding' src="images/topping/Egg pudding.png">
+								<div class="topping-item"  onclick="toppingChange('Egg-pudding')">
+									<img class="topping-image" alt='Egg pudding' src="images/topping/Egg-pudding.png">
 									<div class="tooltip">
 										<p class="topping-caption">Egg pudding</p>
 										<span class="tooltiptext" id="eggpudding1">Egg pudding is a sweet custard dessert with a smooth texture made from sugar, eggs, and milk. It is often consumed on its own but recently became a popular topping in boba drinks.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Frog eggs')">
-									<img class="topping-image" alt='Frog eggs' src="images/topping/Frog eggs.png">
+								<div class="topping-item"  onclick="toppingChange('Frog-eggs')">
+									<img class="topping-image" alt='Frog eggs' src="images/topping/Frog-eggs.png">
 									<div class="tooltip">
 										<p class="topping-caption">Frog eggs</p>
 										<span class="tooltiptext" id="frogeggs1"> Also known as mountain tapioca in Chinese [山粉圓], it is made from the seeds of the pignut plant. The seeds are flat and dark but after being soaked in water a translucent pectin layer would appear around the dark seed, making it look like frog eggs! Frog egg desserts are commonly found in Taiwanese night markets.</span>
 									</div>			
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Grass jelly')">
-									<img class="topping-image" alt='Grass jelly' src="images/topping/Grass jelly.png">
+								<div class="topping-item"  onclick="toppingChange('Grass-jelly')">
+									<img class="topping-image" alt='Grass jelly' src="images/topping/Grass-jelly.png">
 									<div class="tooltip">
 										<p class="topping-caption">Grass jelly</p>
 										<span class="tooltiptext" id="grassjelly1">Grass jelly comes from the Chinese mesona plant native to Taiwan (in the mint family). It can be made by boiling the stems and leaves (at this stage it can be made into grass jelly tea), then set with starch and sweetener into a jelly. The name comes from its Chinese name, 'xian-cao' [仙草] which translates to “immortal grass” for its healing properties. It has a flavor between rooibus and mint with smoky undertone.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Ice cream')">
-									<img class="topping-image" alt='Ice cream' src="images/topping/Ice cream.png">
+								<div class="topping-item"  onclick="toppingChange('Ice-cream')">
+									<img class="topping-image" alt='Ice cream' src="images/topping/Ice-cream.png">
 									<div class="tooltip">
 										<p class="topping-caption">Ice cream</p>
 										<span class="tooltiptext" id="icecream1">Self explanatory :)</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Mashed sweet potato')">
-									<img class="topping-image" alt='Mashed sweet potato' src="images/topping/Mashed sweet potato.png">
+								<div class="topping-item"  onclick="toppingChange('Mashed-sweet-potato')">
+									<img class="topping-image" alt='Mashed sweet potato' src="images/topping/Mashed-sweet-potato.png">
 									<div class="tooltip">
 										<p class="topping-caption">Mashed sweet potato</p>
 										<span class="tooltiptext" id="mashedsweetpotato1">Taiwanese have been eating sweet potatoes since the 1600s and it became a key crop by 1700s, including for the aboriginese. At one point it was among the most important crops along with rice and sugar.  It is called [番薯] or [地瓜] (earth melon) in Chinese.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Millet mush')">
-									<img class="topping-image" alt='Millet mush' src="images/topping/Millet mush.png">
+								<div class="topping-item"  onclick="toppingChange('Millet-mush')">
+									<img class="topping-image" alt='Millet mush' src="images/topping/Millet-mush.png">
 									<div class="tooltip">
 										<p class="topping-caption">Millet mush</p>
 										<span class="tooltiptext" id="milletmush1">Called literally as "noodle tea"[麵茶] in Chinese (pronounced [米爹] in Taiwanese), it essentially is the mush made by mixing wheat flour, often along with peanut, sesame or almond poweder plus sugar, in boiling water.  It was originally a dish from northern China and is now a common dish sold by street vendors in Taiwan.  Recently it also became popular as a dessert and consumed with shaved ice as well as milk tea.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Mung bean puree')">
-									<img class="topping-image" alt='Mung bean puree' src="images/topping/Mung bean puree.png">
+								<div class="topping-item"  onclick="toppingChange('Mung-bean-puree')">
+									<img class="topping-image" alt='Mung bean puree' src="images/topping/Mung-bean-puree.png">
 									<div class="tooltip">
 										<p class="topping-caption">Mung bean puree</p>
 										<span class="tooltiptext" id="mungbeanpuree1">Mung beans come from a plant in the legume family found mainly in Asia.  The paste is made by cooking mung beans with sugar. On its own, it is a popular dessert in the summer season.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Osmanthus agar pearl')">
-									<img class="topping-image" alt='Osmanthus agar pearl' src="images/topping/Osmanthus agar pearl.png">
+								<div class="topping-item"  onclick="toppingChange('Osmanthus-agar-pearl')">
+									<img class="topping-image" alt='Osmanthus agar pearl' src="images/topping/Osmanthus-agar-pearl.png">
 									<div class="tooltip">
 										<p class="topping-caption">Osmanthus agar pearl</p>
 										<span class="tooltiptext" id="osmanthusagarpearl1">It is essentially agar pearl, which is formed from agar (a seaweed extract), immersed in syrup with Osmanthus flowers.  Osmanthus is a genus of plants that has been in Taiwan since the 1700s, their flowers are really popular in Taiwan and can be found in various products, including oolong teas and various desserts.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Passion fruit konjac jelly')">
-									<img class="topping-image" alt='Passion fruit konjac jelly' src="images/topping/Passion fruit konjac jelly.png">
+								<div class="topping-item"  onclick="toppingChange('Passion-fruit-konjac-jelly')">
+									<img class="topping-image" alt='Passion fruit konjac jelly' src="images/topping/Passion-fruit-konjac-jelly.png">
 									<div class="tooltip">
 										<p class="topping-caption">Passion fruit konjac jelly</p>
 										<span class="tooltiptext" id="passionfruitkonjacjelly1">Konjac jelly is made from the root of the Konjac plant ([蒟蒻] in Chinese, and konnyaku in Japanases) native to E and SE Asia. It is a type of jelly similar to gelatin but firmer and basically tasteless on its own. Passionfruit, another plant found in Taiwan since the 1900s up until 2000 m elevation, can be added to it to add flavor to the texture.</span>
@@ -194,22 +206,22 @@
 										<span class="tooltiptext" id="pearl1">Pearls are essentially tapioca balls that are smaller than boba, and are sometimes called mini boba.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Pineapple chunk')">
-									<img class="topping-image" alt='Pineapple chunk' src="images/topping/Pineapple chunk.png">
+								<div class="topping-item"  onclick="toppingChange('Pineapple-chunk')">
+									<img class="topping-image" alt='Pineapple chunk' src="images/topping/Pineapple-chunk.png">
 									<div class="tooltip">
 										<p class="topping-caption">Pineapple chunk</p>
 										<span class="tooltiptext" id="pineappliechunk1">Pineapples have been cultivated in Taiwan since the 1600s and became a major crop under Japanese rule, and by 1972 Taiwan was the number two pineapple producer in the world, just after Hawaii. Nowadays the pineapples produced are mainly consumed locally with some exported to China before 2021 when China banned Taiwanese pineapples, but Taiwanese people bought up the excess stock. This response became knownn as "Freedom pineapples".</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Red beans')">
-									<img class="topping-image" alt='Red beans' src="images/topping/Red beans.png">
+								<div class="topping-item"  onclick="toppingChange('Red-beans')">
+									<img class="topping-image" alt='Red beans' src="images/topping/Red-beans.png">
 									<div class="tooltip">
 										<p class="topping-caption">Red beans</p>
 										<span class="tooltiptext" id="redbeans1">Red beans, [红豆] in Chinese, are used in many delicacies, such as the sweet red bean soup and the red bean wheel cakes. It is also a popular ingredient added to shaved ice, and more recently bubble tea drinks.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Rice grain')">
-									<img class="topping-image" alt='Rice grain' src="images/topping/Rice grain.png">
+								<div class="topping-item"  onclick="toppingChange('Rice-grain')">
+									<img class="topping-image" alt='Rice grain' src="images/topping/Rice-grain.png">
 									<div class="tooltip">
 										<p class="topping-caption">Rice grain</p>
 										<span class="tooltiptext" id="ricegrain1">Also known as puffed rice [米香], it is a puffed grain made from rice.  It is formed by the reaction of both starch and moisture when heated within the shell of the grain. </span>
@@ -222,22 +234,22 @@
 										<span class="tooltiptext" id="sago1">Produced from sago palm starch. On its own sago does not have much flavor and is less chewy and smaller than tapioca pearls. They are easy to slurp and often paired well with creamy drinks.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Taro balls')">
-									<img class="topping-image" alt='Taro balls' src="images/topping/Taro balls.png">
+								<div class="topping-item"  onclick="toppingChange('Taro-balls')">
+									<img class="topping-image" alt='Taro balls' src="images/topping/Taro-balls.png">
 									<div class="tooltip">
 										<p class="topping-caption">Taro balls</p>
 										<span class="tooltiptext" id="taroballs1">Taro balls are a traditional Taiwanese dessert made from taro, a perennial herbaceous plant in the Araceae family, it is also known as ōo-á in Taiwanese.  Although taro was one of the staple foods of the Taiwanese aborigines in the past, now it is mostly consumed as a dessert.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Ube balls')">
-									<img class="topping-image" alt='Ube balls' src="images/topping/Ube balls.png">
+								<div class="topping-item"  onclick="toppingChange('Ube-balls')">
+									<img class="topping-image" alt='Ube balls' src="images/topping/Ube-balls.png">
 									<div class="tooltip">
 										<p class="topping-caption">Ube balls</p>
 										<span class="tooltiptext" id="ubeballs1">Ube is also known as purple yam or purple sweet potato, and it originated in the Philippines. Ube balls are fried purple yam mixed with condensed milk.</span>
 									</div>
 								</div>
-								<div class="topping-item"  onclick="toppingChange('Wood ear')">
-									<img class="topping-image" alt='Wood' src="images/topping/Wood ear.png">
+								<div class="topping-item"  onclick="toppingChange('Wood-ear')">
+									<img class="topping-image" alt='Wood ear' src="images/topping/Wood-ear.png">
 									<div class="tooltip">
 										<p class="topping-caption">Wood ear</p>
 										<span class="tooltiptext" id="woodear1">Also known as tree ear, it is an edible fungus found on the bark of elder trees popular in Taiwanese savory dishes and desserts alike. </span>
@@ -246,36 +258,41 @@
 							</div>
 						</div>
 					</div>
-
+					
+					<!-- choose ice or hot -->
 					<div class="slide" data-slide="3">
 						<h2 class="animatable">Ice or hot?</h2>
 						<div class="animatable">
+
+							<!-- Introductory texts -->
 							<p class="normal-text">Here's a secret: asking for no ice can get you a more concentrated tea flavor! You may even get extra points for ordering like a Taiwanese local. That’s because according to East Asian medicine, hot or room-temperature drinks are good for your health. Given this custom, some academics actually credit bubble tea for introducing a preference for cold drinks to Asia.</p>
 							<p class="normal-text">You can customize the percentage of sugar, too!</p>
+							
+							<!-- show different level of ice -->
 							<div class="base-container">
-								<div class="image-item" onclick="iceChange('Regular ice')">
+								<div class="image-item" onclick="iceChange('Regular-ice')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='Regular ice' src="images/ice/Regular ice.png">
+									<img class="image-image" alt='Regular ice' src="images/ice/Regular-ice.png">
 									<p class="image-caption">Regular ice</p>
 								</div>
-								<div class="image-item" onclick="iceChange('Less ice')">
+								<div class="image-item" onclick="iceChange('Less-ice')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='Less ice' src="images/ice/Less ice.png">
+									<img class="image-image" alt='Less ice' src="images/ice/Less-ice.png">
 									<p class="image-caption">Less ice</p>
 								</div>
-								<div class="image-item" onclick="iceChange('Some ice')">
+								<div class="image-item" onclick="iceChange('Some-ice')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='Some ice' src="images/ice/Some ice.png">
+									<img class="image-image" alt='Some ice' src="images/ice/Some-ice.png">
 									<p class="image-caption">Some ice</p>
 								</div>
-								<div class="image-item" onclick="iceChange('No ice')">
+								<div class="image-item" onclick="iceChange('No-ice')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='No ice' src="images/ice/No ice.png">
+									<img class="image-image" alt='No ice' src="images/ice/No-ice.png">
 									<p class="image-caption">No ice</p>
 								</div>
 								<div class="image-item" onclick="iceChange('Warm')">
 									<div class="image-item-circle"></div>
-									<img class="image-image" alt='Less ice' src="images/ice/Warm.png">
+									<img class="image-image" alt='warm' src="images/ice/Warm.png">
 									<p class="image-caption">Warm/hot</p>
 								</div>
 							</div>
@@ -283,17 +300,24 @@
 					</div>
 
 				</div>
+
+				<!-- Bubble tea cup on the right -->
 				<div class="device-frame">
 					<div class="image-slides">
 						<div class="device-slide device-slide1">
 							<div class="bubble-tea">
-								<img class="bubble-tea-image5" src="">
-								<img id="baseTeaImage" src="images/base/empty.png">
-								<img class="bubble-tea-image0" src="">
-								<img class="bubble-tea-image1" src="">
-								<img class="bubble-tea-image2" src="">
-								<img class="bubble-tea-image3" src="">
-								<img class="bubble-tea-image4" src="">
+								<!-- placeholder for the ice level layer -->
+								<img class="bubble-tea-image5" alt="the ice level you pick" src="images/topping/place-holder.png">
+								
+								<!-- base tea image. It is initially an empty cup -->
+								<img id="baseTeaImage" alt="empty bubble tea cup" src="images/base/empty.png">
+
+								<!-- here are where the five toppings goes-->
+								<img class="bubble-tea-image0" alt="the first topping you pick" src="/images/topping/place-holder.png">
+								<img class="bubble-tea-image1" alt="the second topping you pick" src="/images/topping/place-holder.png">
+								<img class="bubble-tea-image2" alt="the third topping you pick" src="/images/topping/place-holder.png">
+								<img class="bubble-tea-image3" alt="the fourth topping you pick" src="/images/topping/place-holder.png">
+								<img class="bubble-tea-image4" alt="the fifth topping you pick" src="/images/topping/place-holder.png">
 								
 							</div>
 						</div>
@@ -302,32 +326,36 @@
 			</div>
 		</section>
 
+		<!-- background image -->
 		<section class="panel home" data-section-name="home">
-			<img class="inner" alt="miltea background" src="images/bg/dark.svg">
+			<img class="inner" alt="three-layered milk tea with boba background" src="images/bg/bubble.svg">
 		</section>
 
 		<section class="panel panel1" data-section-name="second">
-			<img class="inner" alt="miltea background" src="images/bg/shallow.svg">
+			<img class="inner" alt="shallow wavy milk tea background" src="images/bg/shallow.svg">
 		</section>
 
 		<section class="panel panel2" data-section-name="third">
-			<img class="inner" alt="miltea background" src="images/bg/medium.svg">
+			<img class="inner" alt="two-layered wavy milk tea background" src="images/bg/medium.svg">
 		</section>
 
 		<section class="panel panel3" data-section-name="fourth">
-			<img class="inner" alt="miltea background" src="images/bg/dark.svg">
+			<img class="inner" alt="three-layered milk tea background" src="images/bg/dark.svg">
 		</section>
 
 
+		<!-- script files -->
 		<script src="./script/jquery-1.11.1.js"></script>
 
-		<script src="./examples:layered-scrolling/sript/easing.js"></script>
+		<script src="./js/boba.js"></script>
 
 		<script src="./script/jquery.scrollify.js"></script>
 
-		<script src="./examples:layered-scrolling/sript/main.js"></script>
+		<script src="./js/main.js"></script>
 		<script async defer src="https://buttons.github.io/buttons.js"></script>
-		<script src="./examples:layered-scrolling/sript/boba.js"></script>
+		<script src="./js/easing.js"></script>
+
+		<!-- Google analytics -->
 		<script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
